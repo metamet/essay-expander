@@ -1,15 +1,19 @@
 extends layout
 
 block content
-  h1 Essay Expander
+  h1 Essay Expander 
+
   form#processWords(name="process",method="post",action="/process")
-    | Select min words: 
     button(type="submit",value="1") 1
     button(type="submit",value="2") 2
     button(type="submit",value="3") 3
     button(type="submit",value="4") 4
     button(type="submit",value="save") Save
   h2#results(contenteditable="true")
+  
+  div
+    a(href="https://github.com/metamet/essay-expander") GitHub
+    
   div#synonymmodal
     div#synonymwell
     
