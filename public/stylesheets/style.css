@@ -1,0 +1,60 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #424242;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.word {
+  background-color: #FFFF99;
+  cursor: help;
+}
+.word:hover {
+  background-color: #FFFF00;
+}
+#results {
+  border: 1px solid #ccc; 
+  padding: 10px;
+}
+#synonymwell {
+  border: 0px solid #ccc;
+  background-color: white;
+  padding: 10px;
+}
+#synonymwell ul li {
+}
+
+#synonymwell ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+#synonymwell h3 {
+  color: black; 
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+#synonymmodal:before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: -2px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #ccc;
+  transform: rotate(-45deg);
+}
+
+#synonymmodal {
+  position: absolute;
+  display: none;
+  background-color: #ccc;
+  border: 1px solid #ccc;
+  padding: 0px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}​
+
