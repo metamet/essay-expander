@@ -1,20 +1,31 @@
 extends layout
 
 block content
-  h1 Essay Expander 
-
-  form#processWords(name="process",method="post",action="/process")
-    button(type="submit",value="1") 1
-    button(type="submit",value="2") 2
-    button(type="submit",value="3") 3
-    button(type="submit",value="4") 4
-    button(type="submit",value="save") Save
-  h2#results(contenteditable="true")
-  
-  div
-    a(href="https://github.com/metamet/essay-expander") GitHub
+  header.site-header
+    div.wrap
     
-  div#synonymmodal
-    div#synonymwell
+      div.header-left
+        h1 Essay Expander 
+        
+      div.header-right
+        form#processWords(name="process",method="post",action="/process")
+          button(type="submit",value="1") 1
+          button(type="submit",value="2") 2
+          button(type="submit",value="3") 3
+          button(type="submit",value="4") 4
+          button(type="submit",value="save") save
+        
+  main.site-inner  
+    div.wrap
+
+      h2#results(contenteditable="true")
+        
+      div#synonymmodal
+        div#synonymwell
+        
+  footer.site-footer
+    div.wrap
+      div
+        a(href="https://github.com/metamet/essay-expander") GitHub
     
   script(src='/javascripts/custom.js')

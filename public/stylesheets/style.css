@@ -1,11 +1,57 @@
 body {
-  padding: 50px;
+  margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   color: #424242;
 }
-
 a {
   color: #00B7FF;
+}
+.wrap:before {
+	content: " ";
+	display: table;
+}
+.wrap {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.wrap:after {
+	clear: both;
+	content: " ";
+	display: table;
+}
+
+.site-header {
+  border-bottom: 0px solid #e7ebef;
+}
+
+.header-left {
+  width: 50%;
+  float: left;
+}
+
+.header-right {
+  width: 50%;
+  text-align: right;
+  float: right;
+  padding-top: 25px; 
+}
+
+.site-inner {
+	position: relative;
+}
+
+.site-footer {
+  clear: both;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 24px 0;
+}
+
+@media (max-width: 992px) {
+  .wrap {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .word {
