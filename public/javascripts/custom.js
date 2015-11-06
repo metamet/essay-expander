@@ -8,6 +8,7 @@ $(function(){
 		// Save it for later.
 		if (parameters.min == "save") {
 			saveEdits();
+			$('#saved').fadeIn( 200 ).delay( 600 ).fadeOut( 50 );
 			return;
 		}
 		// The number process the string. 
@@ -29,6 +30,9 @@ $(function(){
 			// Spit it back out on the table. Blech!
 			$('#results').html(newTable);
 		});
+		$('#processWords button').removeClass('active inactive');
+		$(this).addClass('active');
+		$('.site-inner').addClass('active').removeClass('inactive');
 	});
 	
 	// Hover over word to see replacements.

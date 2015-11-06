@@ -9,19 +9,22 @@ block content
         
       div.header-right
         form#processWords(name="process",method="post",action="/process")
-          button(type="submit",value="1") 1
-          button(type="submit",value="2") 2
-          button(type="submit",value="3") 3
-          button(type="submit",value="4") 4
-          button(type="submit",value="save") save
+          button(type="submit",value="1",class="btn inactive") 1 <br> word
+          button(type="submit",value="2",class="btn inactive") 2 <br> word
+          button(type="submit",value="3",class="btn inactive") 3 <br> word
+          button(type="submit",value="4",class="btn inactive") 4 <br> word
+          button(type="submit",value="save",class="btn") save
         
-  main.site-inner  
+  main.site-inner.inactive
     div.wrap
 
       h2#results(contenteditable="true")
         
       div#synonymmodal
         div#synonymwell
+        
+      div#saved
+        h2 Saved
         
   footer.site-footer
     div.wrap

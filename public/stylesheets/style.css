@@ -4,7 +4,28 @@ body {
   color: #424242;
 }
 a {
-  color: #00B7FF;
+  color: #71BCCE;
+  text-decoration: none;
+}
+.btn {
+  height: 70px;
+  width: 70px;
+  border: 0;
+  background: white;
+  vertical-align: middle;
+  font-family: Open Sans;
+  font-size: .8em;
+  line-height: .9em;
+  outline: none;
+}
+.active {
+  background: #c1cffc;
+}
+.btn.active {
+  color: white;
+}
+.inactive {
+  background: #D1D7EB;
 }
 .wrap:before {
 	content: " ";
@@ -21,23 +42,25 @@ a {
 }
 
 .site-header {
-  border-bottom: 0px solid #e7ebef;
+  padding-left: 20px;
 }
 
 .header-left {
   width: 50%;
   float: left;
+  min-height: 70px;
 }
 
 .header-right {
   width: 50%;
   text-align: right;
   float: right;
-  padding-top: 25px; 
+  min-height: 70px;
 }
 
 .site-inner {
 	position: relative;
+  padding: 0 20px;
 }
 
 .site-footer {
@@ -45,6 +68,7 @@ a {
   margin: 0 auto;
   overflow: hidden;
   padding: 24px 0;
+  text-align: center;
 }
 
 @media (max-width: 992px) {
@@ -61,8 +85,25 @@ a {
 .word:hover {
   background-color: #FFFF00;
 }
+
+#saved {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 100px;
+  height: 60px;
+  border: 1px solid #6988F0;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  padding: 5px;
+  background: white;
+  text-align: center;
+  display: none;
+}
+
 #results {
-  border: 1px solid #ccc; 
+  background: white;
   padding: 10px;
 }
 #synonymwell {
@@ -91,16 +132,15 @@ a {
   top: -2px;
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
-	border-bottom: 10px solid #ccc;
+	border-bottom: 10px solid #6988F0;
   transform: rotate(-45deg);
 }
 
 #synonymmodal {
   position: absolute;
   display: none;
-  background-color: #ccc;
-  border: 1px solid #ccc;
+  background-color: #6988F0;
+  border: 1px solid #6988F0;
   padding: 0px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }​
-
