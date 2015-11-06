@@ -32,7 +32,7 @@ $(function(){
 		});
 		$('#processWords button').removeClass('active inactive');
 		$(this).addClass('active');
-		$('.site-inner').addClass('active').removeClass('inactive');
+		$('#results').addClass('active').removeClass('inactive');
 	});
 	
 	// Hover over word to see replacements.

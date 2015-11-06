@@ -7,7 +7,6 @@ var bodyParser = require('body-parser');
 var thesaurus = require('thesaurus');
 
 var routes = require('./routes/index');
-var users = require('./routes/users');
 
 var app = express();
 
@@ -71,7 +70,6 @@ app.get('/process', function(req, res){
 });
 
 app.use('/', routes);
-app.use('/users', users);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
