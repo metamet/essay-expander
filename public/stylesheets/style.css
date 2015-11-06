@@ -1,10 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 body {
   margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   color: #424242;
 }
 a {
-  color: #71BCCE;
+  color: #52b9e9;
   text-decoration: none;
 }
 .btn {
@@ -13,19 +15,19 @@ a {
   border: 0;
   background: white;
   vertical-align: middle;
-  font-family: Open Sans;
+  font-family: 'Open Sans', sans-serif;
   font-size: .8em;
   line-height: .9em;
   outline: none;
 }
 .active {
-  background: #c1cffc;
+  background: #52b9e9;
 }
 .btn.active {
   color: white;
 }
 .inactive {
-  background: #D1D7EB;
+  border: 1px solid #cceaf8;
 }
 .wrap:before {
 	content: " ";
@@ -94,7 +96,7 @@ a {
   margin-left: -50px;
   width: 100px;
   height: 60px;
-  border: 1px solid #6988F0;
+  border: 1px solid #52b9e9;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   padding: 5px;
   background: white;
@@ -105,6 +107,7 @@ a {
 #results {
   background: white;
   padding: 10px;
+  outline: none;
 }
 #synonymwell {
   border: 0px solid #ccc;
@@ -132,15 +135,15 @@ a {
   top: -2px;
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
-	border-bottom: 10px solid #6988F0;
+	border-bottom: 10px solid #43bef8;
   transform: rotate(-45deg);
 }
 
 #synonymmodal {
   position: absolute;
   display: none;
-  background-color: #6988F0;
-  border: 1px solid #6988F0;
+  background-color: #43bef8;
+  border: 1px solid #43bef8;
   padding: 0px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }​
